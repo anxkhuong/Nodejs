@@ -4,7 +4,7 @@ const sequelize = new Sequelize('develepment', 'root', null, {
     host: 'localhost',
     dialect: 'mysql'
 });
-
+///123
 let connectDB = async() => {
     try {
         await sequelize.authenticate();
