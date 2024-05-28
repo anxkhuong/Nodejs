@@ -2,7 +2,7 @@
     "development": {
         "username": "root",
         "password": null,
-        "database": "database_development",
+        "database": "develepment",
         "host": "127.0.0.1",
         "dialect": "mysql",
         "longging": false,
@@ -14,7 +14,7 @@
     "test": {
         "username": "root",
         "password": null,
-        "database": "database_test",
+        "database": "develepment",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },

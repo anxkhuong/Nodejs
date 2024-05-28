@@ -27,7 +27,7 @@ module.exports = {
             },
 
             gender: {
-                type: Sequelize.BOOLEAN
+                type: Sequelize.STRING
             },
             phoneNumber: {
                 type: Sequelize.STRING
@@ -38,7 +38,7 @@ module.exports = {
             roleid: {
                 type: Sequelize.STRING
             },
-            iamge: {
+            image: {
                 type: Sequelize.STRING
             },
 

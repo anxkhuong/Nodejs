@@ -17,6 +17,7 @@ let createNewUser = async(data) => {
                 gender: data.gender === '1' ? true : false,
                 roleId: data.roleId,
                 phoneNumber: data.phoneNumber,
+
             })
             resolve('ok !! create a new user succed!')
         } catch (e) {
@@ -42,7 +43,7 @@ let getAllUser = () => {
     return new Promise(async(resolve, reject) => {
         try {
             let users = await db.User.findAll({
-                attributes: { exclude: ['image'] }, // Loại trừ trường 'image'
+
                 raw: true,
             });
             resolve(users)
@@ -56,7 +57,6 @@ let geUserInfoById = (userId) => {
         try {
             let user = await db.User.findOne({
                 where: { id: userId },
-                attributes: { exclude: ['image'] },
                 raw: true,
 
             })
@@ -84,7 +84,7 @@ let updateUserData = async(data) => {
                     await user.save();
 
                     let allUser = await db.User.findAll({
-                        attributes: { exclude: ['image'] },
+
                         raw: true,
                     });
 
@@ -122,7 +122,7 @@ let deleteUserById = (userId) => {
         try {
             let user = await db.User.findOne({
                 where: { id: userId },
-                attributes: { exclude: ['image'] },
+
             })
             if (user) {
                 await user.destroy();
