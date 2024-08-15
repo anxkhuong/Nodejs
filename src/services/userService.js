@@ -174,7 +174,8 @@ let updateUserData = async(data) => {
             if (!data.id || !data.roleId || !data.positionId || !data.gender) {
                 resolve({
                     errCode: 2,
-                    errMessage: `Missing required parameters`
+                    errMessage: `
+                     required parameters`
                 });
             }
             let user = await db.User.findOne({
@@ -192,11 +193,6 @@ let updateUserData = async(data) => {
                 user.image = data.avatar;
                 user.password = data.password;
                 await user.save();
-                // await db.User.save({
-                //     firstName: data.firstName,
-                //     lastName: data.lastName,
-                //     address: data.address
-                // })
                 resolve({
                     errCode: 0,
                     message: `update the user succeeds!`
