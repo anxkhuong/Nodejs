@@ -24,11 +24,38 @@ module.exports = {
                 type: Sequelize.INTEGER
             },
             date: {
-                type: Sequelize.DATE
+                type: Sequelize.STRING
             },
             timeType: {
                 type: Sequelize.STRING
             },
+            token:{
+                type:Sequelize.STRING
+            },
+            // fullName: {
+            //     type: DataTypes.STRING,
+            //     allowNull: false
+            // },
+            // phoneNumber: {
+            //     type: DataTypes.STRING,
+            //     allowNull: false
+            // },
+            // address: {
+            //     type: DataTypes.STRING,
+            //     allowNull: false
+            // },
+            // reason: {
+            //     type: DataTypes.TEXT,
+            //     allowNull: true
+            // },
+            // birthday: {
+            //     type: DataTypes.STRING,
+            //     allowNull: false
+            // },
+            // gender: {
+            //     type: DataTypes.STRING,
+            //     allowNull: false
+            // }
 
             createdAt: {
                 allowNull: false,

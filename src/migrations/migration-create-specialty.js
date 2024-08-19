@@ -11,7 +11,7 @@ module.exports = {
                 type: Sequelize.INTEGER
             },
             image: {
-                type: Sequelize.INTEGER
+                type: Sequelize.BLOB('long')
             },
             maxNumber: {
                 type: Sequelize.INTEGER
@@ -27,6 +27,12 @@ module.exports = {
             },
             doctorId: {
                 type: Sequelize.STRING
+            },
+            descriptionHTML:{
+                type: Sequelize.TEXT
+            },
+            descriptionMarkdown:{
+                type: Sequelize.TEXT
             },
 
             createdAt: {
