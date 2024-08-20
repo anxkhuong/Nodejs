@@ -63,7 +63,7 @@ let postBookAppointment = (data) => {
     return new Promise(async (resolve, reject) => {
         try {
             // Kiểm tra các tham số cần thiết
-            if (!data.email || !data.doctorId) {
+            if (!data.email || !data.doctorId || !data.timeType || !data.date || !data.fullName ||!data.selectedGender || !data.address) {
                 return resolve({
                     errCode: 1,
                     errMessage: 'Missing parameter'
