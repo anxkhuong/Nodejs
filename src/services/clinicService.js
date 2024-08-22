@@ -56,7 +56,7 @@ let getAllClinic = ()=>{
     })
 }
 
-let getDetailClinictyById = ()=>{
+let getDetailClinictyById = (inputId)=>{
     return new Promise(async (resolve, reject) => {
         try {
                 if(!inputId ){
@@ -64,7 +64,8 @@ let getDetailClinictyById = ()=>{
                         errCode:1,
                         errMessage:'Missing parameter'
                     })
-                }else {
+                }
+                else {
                     let data = await db.clinic.findOne({
                         where:{
                             id:inputId

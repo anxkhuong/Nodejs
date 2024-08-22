@@ -32,7 +32,8 @@ router.post('/api/bulk-create-schedule', doctorController.bulkCreateSchedule);
     router.get('/api/get-extra-infor-doctor-by-id', doctorController.getExtraInforDoctorById);
     router.get('/api/get-profile-doctor-by-id',doctorController.getDoctorProfileById)
 
-    router.get('/api/get-list-patient-for-doctor',doctorController.getListPatientForDoctor)
+    router.get('/api/get-list-patient-for-doctor',doctorController.getListPatientForDoctor);
+    router.post('/api/sendRemedy',doctorController.sendRemedy)
 
 router.post('/api/patient-book-appointment',patientController.postBookAppointment);
 router.post('/api/verify-book-appointment',patientController.postVerifyBookAppointment);
