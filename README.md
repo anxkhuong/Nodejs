@@ -50,7 +50,7 @@ An Backend Booking Site, implemented with [Node.js](https://nodejs.org/) and [Ex
 
 ## ✨ Demo
 
-You can visit and explore Site in the [Booking & Hopspital Choloé](https://chloé.vn/) template.
+You can visit and explore Site in the [Booking & Hopspital Choloé](https://backend.chloé.vn/) template.
 
 ## 🔥 Features
 
